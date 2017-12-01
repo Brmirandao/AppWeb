@@ -1,0 +1,20 @@
+/* 1 */
+{
+    "_id" : ObjectId("5a20d8c4e32569369e86d506"),
+    "commercialName" : "Queque de Iron Man",
+    "id" : "3432",
+    "type" : "cake",
+    "Slices" : {
+        "big" : "16 Slices",
+        "medium" : "8 Slices",
+        "small" : "4 Slices",
+        "personal" : "1 Slice"
+    },
+    "prices:" : {
+        "big" : "12000",
+        "medium" : "6000",
+        "small" : "4000",
+        "personal" : "1500"
+    },
+    "additionalComments" : "Con letras en cursiva: Felicidades!"
+}

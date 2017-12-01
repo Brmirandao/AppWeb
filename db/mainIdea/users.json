@@ -1,0 +1,21 @@
+/* 1 */
+{
+    "_id" : ObjectId("5a20d127e32569369e86d407"),
+    "email" : "arco@gmail.com",
+    "typeOfClient" : "person",
+    "generalInfo" : {
+        "name" : "Elvis",
+        "lastname" : "Ozuna",
+        "exactLocation" : "9.989473, -84.139791",
+        "location" : "San Francisco, Heredia"
+    },
+    "phones" : {
+        "mainPhone" : "+50688888888",
+        "otherPhone" : "+50622222222"
+    },
+    "orders" : {
+        "pastOrders" : "[123,234,345]",
+        "pendingOrders" : "[9084,4545,243]",
+        "wishList" : "[343,234]"
+    }
+}
