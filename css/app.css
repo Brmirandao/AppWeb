@@ -1,0 +1,45 @@
+body {
+ padding-top: 70px;
+}
+.navbar {
+      background: #FFC0CB;
+      color: white;
+}
+.navbar .navbar-brand, .navbar-inverse a{
+      color:white;
+}
+.navbar .navbar-nav>li>a {
+      color: white;
+}
+.container{
+  background-color: white;
+}
+h1 {
+  font-style: Georgia;
+}
+
+.mainDiv {
+  background-color: #FF69B4;
+}
+
+img{
+  cursor: pointer;
+}
+
+label, h1, h3{
+  color: #DB7093;
+}
+
+.footer{
+  background-color: #FFC0CB;
+  text-align: center;
+}
+
+.checked{
+    color: #DB7093;
+}
+
+h2, h4 {
+  color: #72bcd4;
+}
+

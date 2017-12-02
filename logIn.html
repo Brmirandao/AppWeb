@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angie's Bakery</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>  
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css"> 
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="background: none;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i><img src="img/cupcake.png" width="25px" height="25px"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Angie's Bakery</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="navbar">
+                   <li><a href="cakeBuilder.html">Constructor de Queques</a></li>
+                   <li><a href="Products.html">Productos</a></li> 
+                   <li><a href="testimonials.html">Testimonios</a></li>
+                   <li><a href="aboutUs.html">¿Quienes Somos?</a></li> 
+                   <li><a href="contact.html">Contactenos</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="logIn.html">Iniciar Sesión</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="mainDiv">
+    <div class="container">
+    <h1>Iniciar Sesion</h1>
+    <div class="alert alert-success" id="Success" style=" display:none" >
+        <strong>Inicio de Sesión Exitoso</strong> 
+      </div>
+
+      <div class="alert alert-danger" id="Error" style=" display: none" >
+        <strong>Error!</strong>  Usuario o Contraseña Incorrectos.
+      </div>
+    <div class="col-sm-10">
+        <form class="form-horizontal" data-toggle="validator" method="post" role="form">
+            <div class="row">
+                <div class="form-group">
+                    <label for="code" class="control-label">Nombre de Usuario</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" id="userName" required>
+                        </div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="code" class="control-label">Contraseña</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                          <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                    <button type="submit" class="btn btn-info">Enviar</button>
+                </div>
+            </form>
+     </div>
+    </div>
+</body>
+</html>

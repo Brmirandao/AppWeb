@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angie's Bakery</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>  
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css"> 
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" style="background: none;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i><img src="img/cupcake.png" width="25px" height="25px"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Angie's Bakery</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="navbar">
+                   <li><a href="cakeBuilder.html">Constructor de Queques</a></li>
+                   <li><a href="Products.html">Productos</a></li> 
+                   <li><a href="testimonials.html">Testimonios</a></li>
+                   <li><a href="aboutUs.html">¿Quienes Somos?</a></li> 
+                   <li><a href="contact.html">Contactenos</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="logIn.html">Iniciar Sesión</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h2>Reviews</h2>
+            <h3>Te gustaron nuestros productos? Dejanos saber que opinas!</h3>
+            <div class="col-sm-4">
+                <form class="form-horizontal" data-toggle="validator" method="post" role="form">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="code" class="control-label">Nombre Completo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" id="contactName" pattern="^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="code" class="control-label">Ciudad</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-building-o" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" id="city" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="code" class="control-label">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="code" class="control-label">Comentario</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
+                                <textarea class="form-control" rows="4" id="comment" required></textarea>
+                            </div>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label for="code" class="control-label">Rating</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Yesterday was my birthday and a client brought me 6 of your cupcakes. I have NEVER in my life tasted better cupcakes. I have not stopped talking about your cupcakes.</p>
+                    <h3>Cathy</h3>
+                    <h4>Locust valley</h4>
+                </div>
+                <div class="col-sm-6">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <p>Just wanted everybody to know that my wedding cake was amazing there are not too many brides that ask for a bud light cake.. Everybody was so impressed how amazing it looked and tasted thank you so very much</p>
+                    <h3>Michele Flannery</h3>
+                    <h4>West Islip</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>I've found my cake caterer for life!! Suzie is an amazing and talented baker and designer. At each of my daughter's birthdays, the guests rave about the cake. It's a work of art, but also tastes soooo good. At every party, her cake has been the star of the show.</p>
+                    <h3>Lorraine Gonzalez-Camastra</h3>
+                    <h4>Wantagh</h4>
+                </div>
+                <div class="col-sm-6">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Your bakery was so much fun to visit! thanks so much for an awesome experience! My little Veronica is still talking about ya! :)</p>
+                    <h3>Kim P</h3>
+                    <h4>Los Angeles</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>I've found my cake caterer for life!! Suzie is an amazing and talented baker and designer. At each of my daughter's birthdays, the guests rave about the cake. It's a work of art, but also tastes soooo good. At every party, her cake has been the star of the show.</p>
+                    <h3>Lorraine Gonzalez-Camastra</h3>
+                    <h4>Wantagh</h4>
+                </div>
+                <div class="col-sm-6">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Wanted to say thanks for the beautiful teapot cake that we had for my daughters shower today. It was amazing, everyone could not get over how beautiful it was....and of course it tasted great!</p>
+                    <h3>Colleen</h3>
+                    <h4>Huntington, NY</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row footer">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>Contactanos y visitanos en nuestras redes sociales!</h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <img src="img/facebook.png" width="64" height="64">
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <img src="img/instagram.png" width="64" height="64">
+            </div>
+            <div class="col-lg-4 col-sm-4">
+              <img src="img/gmail.png" width="64" height="64">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
